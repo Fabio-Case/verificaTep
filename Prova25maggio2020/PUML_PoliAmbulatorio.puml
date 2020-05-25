@@ -1,0 +1,39 @@
+@startuml
+
+class UML_PoliAmbulatorio {
+    public static void main(String[] args)
+}
+
+class CAmbulatorio  {
+    int     codiceIdentificativo;
+    String  posizione;
+}
+class CDate {
+    int numGiorni;    
+    String toString();
+}
+class CMedico {
+    String specializzazione;
+    CDate  dataLaurea;  
+    int    orarioInizioVisite;
+    int    orarioFineVisite;
+}
+class CPaziente {
+    String nome;
+    String codiceTesseraSanitaria;
+    String patologia;  
+}
+class CSocio {
+    String nome;
+    CDate  inizioPartecipazione;
+    int    quotaVersata;
+}
+class CVisita {
+    String descrizione;
+    CDate  dataVisita;
+    int    orarioInizio;
+    int    orarioFine;
+}
+
+
+@enduml
